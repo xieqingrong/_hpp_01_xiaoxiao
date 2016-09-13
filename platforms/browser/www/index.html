@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+    <title>笑笑</title>
+    <link rel="stylesheet" href="css/lib/framework7.material.css">
+    <link rel="stylesheet" href="css/lib/framework7.material.colors.css">
+    <link rel="stylesheet" href="css/app/index.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+
+<body>
+	<div class="statusbar-overlay"></div>
+
+	<!-- left panel -->
+	<div class="panel-overlay"></div>
+	<div class="panel panel-left panel-cover">
+		<!-- lp view -->
+		<div class="view navbar-fixed">
+			<div class="pages">
+				<div class="page" data-page="panel-left">
+					<!-- lp navbar -->
+					<div class="navbar">
+						<div class="navbar-inner">
+							<div class="center">菜单</div>
+						</div>
+		            </div>
+					<!-- lp navbar -->
+					
+					<!-- lp page content -->
+					<div class="page-content">
+						<div class="content-block">
+							<p>精选图文笑话</p>
+						</div>
+						<div class="list-block">
+							<ul>
+								<li>
+									<a href="intro.html" class="item-link close-panel">
+										<div class="item-content">
+											<div class="item-media"><i class="icon icon-f7"></i></div>
+											<div class="item-inner">
+												<div class="item-title">介绍</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="about.html" class="item-link close-panel">
+										<div class="item-content">
+											<div class="item-media"><i class="icon icon-f7"></i></div>
+											<div class="item-inner">
+												<div class="item-title">关于</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- lp page content -->
+				</div>
+			</div>
+		</div>
+		<!-- lp view -->
+	</div>	
+	<!-- left panel -->
+	
+	<!-- views -->
+	<div class="views">
+		<div class="view view-main">
+			<div class="pages navbar-fixed">
+				<div class="page" data-page="index">
+					<!-- navbar -->
+					<div class="navbar">
+						<div class="navbar-inner">
+							<div class="center">笑笑</div>
+			                <div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+						</div>
+		            </div>
+					<!-- navbar -->
+					
+					<!-- floating button -->
+					<div class="speed-dial">
+						<a href="#" class="floating-button">
+							<i class="icon icon-plus"></i>
+							<i class="icon icon-close"></i>
+						</a>
+					    <div class="speed-dial-buttons">
+					    	<a href="#" id="toimg">图</a>
+					    	<a href="#" id="totxt">文</a>
+					    	<a href="#"><i class="icon ks-icon-upload"></i></a>
+					    </div>
+					</div>
+					<!-- floating button -->
+					
+					<!-- page content -->
+					<div class="page-content hide-bars-on-scroll infinite-scroll" data-distance="50"></div>
+					<!-- page content -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- views -->
+	
+	<script type="text/javascript" src="js/lib/framework7.js"></script>
+    <script type="text/javascript" src="js/app/index.js"></script>
+</body>
+</html>
