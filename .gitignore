@@ -1,0 +1,7 @@
+.settings
+.bithoundrc
+.npmignore
+.project
+android/hooks
+android/platforms
+android/plugins
