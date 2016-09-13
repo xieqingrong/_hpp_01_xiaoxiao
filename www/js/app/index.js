@@ -22,10 +22,12 @@ $$('.panel-left').on('close', function () {
 $$('#toimg').on('click', function(){
 	infiniteurl = infiniteurl2;
 	infinitereset();
+	$$('.icon-close').trigger('click');
 });
 $$('#totxt').on('click', function(){
 	infiniteurl = infiniteurl1;
 	infinitereset();
+	$$('.icon-close').trigger('click');
 });
 
 // infinite scroll
@@ -69,10 +71,7 @@ function infiniteit(){
 				for(var i=0; i<json.result.data.length; i++){
 					ss.push(infiniterow(json.result.data[i]));
 				}
-				
 				$$('.infinite-scroll').append(ss.join(''));
-				
-				console.log(ss.join(''));
 			}else{
 				myApp.detachInfiniteScroll($$('.infinite-scroll'));
 			}
@@ -84,24 +83,19 @@ function infiniteit(){
 function infiniterow(item){
 	var ss = [];
 
-	ss.push('<div class="card ks-card-header-pic">');
-	if(item.url){
-		ss.push('	<div class="card-header color-white no-border lazy" valign="bottom" data-background="' + item.url + '">');
-		ss.push('		' + item.content);
-		ss.push('	</div>');
-		ss.push('	<div class="card-content">');
-		ss.push('		<div class="card-content-inner">');
-		ss.push('			<p class="color-gray">' + item.updatetime + '</p>');
-		ss.push('		</div>');
-		ss.push('	</div>');
-	}else{
-		ss.push('	<div class="card-content">');
-		ss.push('		<div class="card-content-inner">');
-		ss.push('			<p class="color-gray">' + item.updatetime + '</p>');
-		ss.push('			<p>' + item.content + '</p>');
-		ss.push('		</div>');
-		ss.push('	</div>');
-	}
+	ss.push('<div class="card ks-facebook-card">');
+	ss.push('	<div class="card-content">');
+	ss.push('		<div class="card-content-inner">');
+	ss.push('			<p>' + item.content + '</p>');
+	if(item.url)
+	ss.push('			<img src="' + item.url + '"/>');
+	ss.push('			<p class="color-gray">' + item.updatetime + '</p>');
+	ss.push('		</div>');
+	ss.push('	</div>');
+	ss.push('	<div class="card-footer">');
+	ss.push('		<a href="#" class="link">Comment</a>');
+	ss.push('		<a href="#" class="link">Share</a>');
+	ss.push('	</div>');
 	ss.push('</div>');
 	
 	return ss.join('');
