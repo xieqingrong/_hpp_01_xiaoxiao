@@ -24,12 +24,10 @@ $$('.panel-left').on('close', function () {
 $$('#toimg').on('click', function(){
 	infiniteurl = infiniteurl2;
 	infinitereset();
-	$$('.icon-close').trigger('click');
 });
 $$('#totxt').on('click', function(){
 	infiniteurl = infiniteurl1;
 	infinitereset();
-	$$('.icon-close').trigger('click');
 });
 
 // infinite scroll
