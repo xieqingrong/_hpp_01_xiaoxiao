@@ -4,7 +4,7 @@ if(typeof StatusBar != 'undefined') StatusBar.backgroundColorByHexString('#2196f
 var $$ = Dom7;
 var myApp = new Framework7({
     modalTitle: '笑笑',
-    material: true,
+    animateNavBackIcon : true,
     onAjaxStart: function(){
     	myApp.showIndicator();
     },
@@ -12,7 +12,9 @@ var myApp = new Framework7({
     	myApp.hideIndicator();
     }
 });
-var mainView = myApp.addView('.view-main', {});
+var mainView = myApp.addView('.view-main', {
+	dynamicNavbar: true
+});
 
 // binds
 $$('.panel-left').on('open', function () {
