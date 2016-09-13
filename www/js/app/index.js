@@ -1,3 +1,5 @@
+if(typeof StatusBar != 'undefined') StatusBar.backgroundColorByHexString('#2196f3');
+
 // vars
 var $$ = Dom7;
 var myApp = new Framework7({
@@ -91,10 +93,6 @@ function infiniterow(item){
 	ss.push('			<img src="' + item.url + '"/>');
 	ss.push('			<p class="color-gray">' + item.updatetime + '</p>');
 	ss.push('		</div>');
-	ss.push('	</div>');
-	ss.push('	<div class="card-footer">');
-	ss.push('		<a href="#" class="link">Comment</a>');
-	ss.push('		<a href="#" class="link">Share</a>');
 	ss.push('	</div>');
 	ss.push('</div>');
 	

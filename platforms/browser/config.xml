@@ -9,8 +9,8 @@
     <name>笑笑</name>
     <description>图文笑话精选</description>
     <author email="uikoo9@qq.com" href="http://uikoo9.com">uikoo9.com</author>
-    <content src="index.html" />
     <icon src="icon.png" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -20,4 +20,6 @@
     <allow-intent href="geo:*" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#2196f3" />
 </widget>
