@@ -1,11 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.uikoo9.xiaoxiao" version="0.1.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <!-- desc -->
     <name>笑笑</name>
     <description>图文笑话精选</description>
     <author email="uikoo9@qq.com" href="http://uikoo9.com">uikoo9.com</author>
     
+    <!-- index -->
     <content src="index.html" />
     
+    <!-- prefer -->
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#2196f3" />
+    
+    <!-- plugin -->
+    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+    <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
+    
+    <!-- android -->
     <icon src="res/icon/android/icon.png"/>
     <platform name="android">
         <icon density="ldpi" src="res/icon/android/icon-36-ldpi.png" />
@@ -14,6 +25,7 @@
         <icon density="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
     </platform>
     
+    <!-- access -->
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

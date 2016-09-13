@@ -1,5 +1,3 @@
-if(typeof StatusBar != 'undefined') StatusBar.backgroundColorByHexString('#2196f3');
-
 // vars
 var $$ = Dom7;
 var myApp = new Framework7({
