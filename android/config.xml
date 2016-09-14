@@ -18,13 +18,13 @@
     
     <!-- android -->
     <icon src="res/icon/android/playstore-icon.png"/>
-    <platform name="android">
-        <icon density="ldpi" src="res/icon/android/ic_launcher.png" />
-        <icon density="mdpi" src="res/icon/android/ic_launcher.png" />
-        <icon density="hdpi" src="res/icon/android/ic_launcher.png" />
-        <icon density="xhdpi" src="res/icon/android/ic_launcher.png" />
-        <icon density="xxhdpi" src="res/icon/android/ic_launcher.png" />
-        <icon density="xxxhdpi" src="res/icon/android/ic_launcher.png" />
+	<platform name="android">
+        <icon density="ldpi" src="res/icon/android/drawable-ldpi/ic_launcher.png" />
+        <icon density="mdpi" src="res/icon/android/drawable-mdpi/ic_launcher.png" />
+        <icon density="hdpi" src="res/icon/android/drawable-hdpi/ic_launcher.png" />
+        <icon density="xhdpi" src="res/icon/android/drawable-xhdpi/ic_launcher.png" />
+        <icon density="xxhdpi" src="res/icon/android/drawable-xxhdpi/ic_launcher.png" />
+        <icon density="xxxhdpi" src="res/icon/android/drawable-xxxhdpi/ic_launcher.png" />
     </platform>
     
     <!-- access -->

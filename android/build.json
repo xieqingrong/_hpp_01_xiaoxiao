@@ -1,14 +1,14 @@
 {
     "android": {
         "debug": {
-            "keystore": "debug.keystore",
+            "keystore": "./res/keystore/debug.keystore",
             "storePassword": "xuuikoo7",
             "alias": "debug",
             "password" : "xuuikoo7",
             "keystoreType": ""
         },
         "release": {
-            "keystore": "release.keystore",
+            "keystore": "./res/keystore/release.keystore",
             "storePassword": "xuuikoo7",
             "alias": "release",
             "password" : "xuuikoo7",
