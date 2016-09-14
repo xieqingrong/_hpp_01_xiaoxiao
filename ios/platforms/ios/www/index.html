@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+    <title>笑笑</title>
+    <link rel="stylesheet" href="css/lib/framework7.ios.css">
+    <link rel="stylesheet" href="css/lib/framework7.ios.colors.css">
+    <link rel="stylesheet" href="css/app/index.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+
+<body>
+	<div class="statusbar-overlay"></div>
+
+	<!-- left panel -->
+	<div class="panel-overlay"></div>
+	<div class="panel panel-left panel-cover layout-dark">
+		<div class="content-block-title">精选图文笑话</div>
+		<div class="content-block">
+			<p>framework7+cordova做的一个小例子，by uikoo9.com</p>
+		</div>
+		<div class="list-block">
+			<ul>
+				<li>
+					<a href="about.html" class="item-link close-panel">
+						<div class="item-content">
+							<div class="item-media"><i class="icon icon-f7"></i></div>
+							<div class="item-inner">
+								<div class="item-title">关于</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>	
+	<!-- left panel -->
+	
+	<!-- views -->
+	<div class="views">
+		<div class="view view-main">
+			<!-- navbar -->
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="center sliding">笑笑</div>
+	                <div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+					<div class="subnavbar sliding">
+						<div class="buttons-row">
+							<a href="#" class="button active" id="totxt">文</a>
+							<a href="#" class="button" id="toimg">图</a>
+						</div>
+					</div>
+				</div>
+            </div>
+			<!-- navbar -->
+			
+			<div class="pages navbar-through">
+				<div class="page" data-page="index">
+					<!-- page content -->
+					<div class="page-content with-subnavbar hide-bars-on-scroll hide-navbar-on-scroll infinite-scroll" data-distance="50"></div>
+					<!-- page content -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- views -->
+	
+	<script type="text/javascript" src="js/lib/framework7.js"></script>
+    <script type="text/javascript" src="js/app/index.js"></script>
+</body>
+</html>
