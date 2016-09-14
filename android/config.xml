@@ -17,12 +17,14 @@
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     
     <!-- android -->
-    <icon src="res/icon/android/icon.png"/>
+    <icon src="res/icon/android/playstore-icon.png"/>
     <platform name="android">
-        <icon density="ldpi" src="res/icon/android/icon-36-ldpi.png" />
-        <icon density="mdpi" src="res/icon/android/icon-48-mdpi.png" />
-        <icon density="hdpi" src="res/icon/android/icon-72-hdpi.png" />
-        <icon density="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
+        <icon density="ldpi" src="res/icon/android/ic_launcher.png" />
+        <icon density="mdpi" src="res/icon/android/ic_launcher.png" />
+        <icon density="hdpi" src="res/icon/android/ic_launcher.png" />
+        <icon density="xhdpi" src="res/icon/android/ic_launcher.png" />
+        <icon density="xxhdpi" src="res/icon/android/ic_launcher.png" />
+        <icon density="xxxhdpi" src="res/icon/android/ic_launcher.png" />
     </platform>
     
     <!-- access -->
