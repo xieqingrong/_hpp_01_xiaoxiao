@@ -84,7 +84,7 @@ function infiniterow(item){
 	ss.push('<div class="card ks-facebook-card">');
 	ss.push('	<div class="card-content">');
 	ss.push('		<div class="card-content-inner">');
-	ss.push('			<p>' + item.content + '</p>');
+	ss.push('			<p>' + wrapline(item.content) + '</p>');
 	if(item.url)
 	ss.push('			<img src="' + item.url + '"/>');
 	ss.push('			<p class="color-gray">' + item.updatetime + '</p>');
@@ -93,4 +93,9 @@ function infiniterow(item){
 	ss.push('</div>');
 	
 	return ss.join('');
+}
+
+// wrap line
+function wrapline(s){
+	return s.replace('/\s+$/g', ';;;').replace(/\s{2}/g, "<br/>");
 }
