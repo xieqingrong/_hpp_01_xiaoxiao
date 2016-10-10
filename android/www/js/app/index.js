@@ -41,7 +41,7 @@ infinitereset();
 
 // infinite reset
 function infinitereset(){
-	$$('.infinite-scroll').html('');
+	$$('.infinite-scroll .scroll-data').html('');
 	infinitepage = 1;
 	infiniteit();
 }
@@ -69,7 +69,7 @@ function infiniteit(){
 				for(var i=0; i<json.result.data.length; i++){
 					ss.push(infiniterow(json.result.data[i]));
 				}
-				$$('.infinite-scroll').append(ss.join(''));
+				$$('.infinite-scroll .scroll-data').append(ss.join(''));
 			}else{
 				myApp.detachInfiniteScroll($$('.infinite-scroll'));
 			}
@@ -99,3 +99,13 @@ function infiniterow(item){
 function wrapline(s){
 	return s.replace('/\s+$/g', ';;;').replace(/\s{2}/g, "<br/>");
 }
+
+// pull to refresh
+var pullloading = false;
+var pullcontent = $$('.pull-to-refresh-content');
+pullcontent.on('refresh', function (e) {
+	setTimeout(function(){
+		myApp.pullToRefreshDone();
+		infinitereset();
+	}, 2000);
+});

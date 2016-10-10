@@ -65,7 +65,7 @@
 	<div class="views">
 		<div class="view view-main">
 			<div class="pages navbar-fixed">
-				<div class="page" data-page="index">
+				<div class="page pull-to-refresh" data-page="index">
 					<!-- navbar -->
 					<div class="navbar">
 						<div class="navbar-inner">
@@ -89,7 +89,13 @@
 					<!-- floating button -->
 					
 					<!-- page content -->
-					<div class="page-content hide-bars-on-scroll infinite-scroll" data-distance="50"></div>
+					<div class="page-content hide-bars-on-scroll infinite-scroll pull-to-refresh-content" data-distance="50">
+						<div class="pull-to-refresh-layer">
+							<div class="preloader"></div>
+							<div class="pull-to-refresh-arrow"></div>
+						</div>
+						<div class="scroll-data"></div>
+					</div>
 					<!-- page content -->
 				</div>
 			</div>
