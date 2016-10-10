@@ -2,3 +2,5 @@
 .bithoundrc
 .npmignore
 .project
+android/plugins
+android/platforms
